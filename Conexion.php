@@ -7,15 +7,20 @@
     }
     
     $conexion->set_charset("utf8");
-    $resul=$conexion->query("");
-    while($fila=$resul->fetch_assoc()){
-        echo "<table>
+    $resul=$conexion->query("SELECT type, material, made_in from dolls");
+echo "<table>
                 <tr>
-                <th>Company</th>
-                <th>Contact</th>
-                <th>Country</th>
+                <th>type</th>
+                <th>material</th>
+                <th>made_in</th>
+              </tr>";
+    while($fila=$resul->fetch_assoc()){
+        echo "<tr>
+                <td>".$fila['type']."</td>
+                <td>".$fila['material']."</td>
+                <td>".$fila['made_in']."</td>
               </tr>
-              <tr>";
+              ";
 
     }
 ?>
