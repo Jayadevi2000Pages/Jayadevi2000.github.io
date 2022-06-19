@@ -8,7 +8,7 @@ require_once 'header.php';
             <img src="images/header_img.jpg" width="100%" height="100%">
         </div>
         <div>
-
+            <p></p>
         </div>
     </main>
 </div>

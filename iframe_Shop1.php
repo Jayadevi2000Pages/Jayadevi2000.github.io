@@ -31,7 +31,6 @@
             margin-right: 70px;
         }
         #filtros{
-            background-color: #ff9f9f;
             margin: auto;
             left:auto;
             position: absolute;
@@ -71,7 +70,7 @@
 
 <div id ="cuerpo_entero">
     <div>
-        <p style="color:blue;"><a href="home.php">Home</a> >> <a href="Shop.php">Shop</a></p>
+        <p style="color:blue;"><a href="home.php">Home</a> >> <a href="iframe_Shop.php">Shop</a></p>
     </div>
     <div id="filtros">
         <h5>Tipo : </h5>
@@ -91,8 +90,7 @@
         <h5>Precio : </h5>
 
         <ul>
-            <a href="iframe_Shop2.php" class="category_item" category="< 50€">< 50€</a> <br>
-            <a href="iframe_Shop2.php" class="category_item" category="> 50€">> 50€</a><br>
+
             <a href="iframe_Shop2.php" class="category_item" category="< 100€">< 100€</a><br>
             <a href="iframe_Shop2.php" class="category_item" category="> 100€">> 100€</a><br>
         </ul>

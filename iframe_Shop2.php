@@ -31,7 +31,6 @@
             margin-right: 70px;
         }
         #filtros{
-            background-color: #ff9f9f;
             margin: auto;
             left:auto;
             position: absolute;
@@ -90,8 +89,7 @@
         <h5>Precio : </h5>
 
         <ul>
-            <a href="#" class="category_item" category="< 50€">< 50€</a> <br>
-            <a href="#" class="category_item" category="> 50€">> 50€</a><br>
+
             <a href="#" class="category_item" category="< 100€">< 100€</a><br>
             <a href="#" class="category_item" category="> 100€">> 100€</a><br>
             <br>
@@ -114,11 +112,18 @@
                 $doll_id = $fila['doll_id'];
                 $precio = $fila['precio'];
                 $material = $fila['material'];
-
+                $preciochar='';
                 $var++;
 
-                echo "                
-                <div class='product-item' category='$precio'>
+
+                if ($precio < 100){
+                    $preciochar = '< 100€';
+
+                } if ($precio > 100){
+                    $preciochar = '> 100€';
+                }
+                echo "           
+                <div class='product-item' category='$preciochar'>
                 <a href='producto.php?doll_id=$var' id='url$var'>
                 <div class='col' id='divEnglobo$var' >
                 <div class='card h-100' id='divExterno$var'>

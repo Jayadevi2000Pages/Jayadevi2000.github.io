@@ -63,7 +63,11 @@
         }
 
     </style>
-
+    <script language="javascript" type="text/javascript">
+        function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        }
+    </script>
         </head>
 <body>
 
@@ -82,21 +86,19 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="blog.php">Blog</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="Shop.php" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Tienda
-                        </a>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="iframe_Shop.php">Tienda</a>
                     </li>
+
 
                 </ul>
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown button
+                        Login/Registro
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="InicioSesion.php">Iniciar Sesión</a></li>
+                        <li><a class="dropdown-item" href="Regitro.php">Registrarse</a></li>
                     </ul>
                 </div>
             </div>

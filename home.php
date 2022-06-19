@@ -1,13 +1,7 @@
 <?php
 require_once 'header.php';
 
-/*    session_start();
-    if (!isset($_SESSION['usuario'])) {
 
-    }
-}else{
-
-}*/
 ?>
 <div id="mybody">
     <a href="iframe_Shop.php" alt="">
@@ -20,7 +14,6 @@ require_once 'header.php';
           <div class="card-body" style="margin: auto; text-align: center;">
             <h5 class="card-title">Tienda</h5>
             <p class="card-text">Tienda online para coleccionistas de muñecas.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
           </div>
         </div>
       </div>
@@ -37,7 +30,6 @@ require_once 'header.php';
                 <div class="card-body" >
                     <h5 class="card-title"style="margin: auto; text-align: center;">Blog</h5>
                     <p class="card-text"style="margin: auto; text-align: center;">Información sobre la autora</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
         </div>

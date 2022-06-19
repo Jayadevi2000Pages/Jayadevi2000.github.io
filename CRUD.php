@@ -42,12 +42,11 @@
         public function getUser($query){
             $res = $this->conexion_db->query($query);
             $user = $res->fetch_all(MYSQLI_ASSOC);
-            $userCount=$res->rowCount();
+            $userCount=$res->num_rows;
             if($userCount == 0){
                 echo '<div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false">
                   <div class="toast-header">
                     <strong class="mr-auto">Inicio Sesión</strong>
-                    <small>11 mins ago</small>
                     <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -55,11 +54,13 @@
                   <div class="toast-body">
                     Usuario o contraseña incorrectos
                   </div>
+                  <a href="InicioSesion.php">Volver a iniciar sesión</a>
                 </div>';
             }else{
                 session_start();
                 $_SESSION['usuario']=$_POST['usuario'];
-                header('location:home.php?var=1');
+                echo "<script>alert('DENTRO')</script>";
+
             }
         }
     }
