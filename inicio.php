@@ -30,7 +30,7 @@
                     </div>
 
                     <div class="pt-3 pb-3">
-                        <form class="form-horizontal">
+                        <form class="form-horizontal" method="post" action="home.php">
                             <div class="form-group row justify-content-center px-3">
                                 <div class="col-9 px-0">
                                     <input type="text" placeholder="&#xf007; &nbsp; User name" class="form-control border-info placeicon">

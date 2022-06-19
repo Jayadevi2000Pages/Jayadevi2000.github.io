@@ -25,6 +25,13 @@
             type="text/javascript"
             src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"
     ></script>    <style>
+        #cuerpoShop{
+            width: 55rem;
+        }
+        #centrarTienda{
+            background-color: #e27ae8;
+            margin: auto;
+            text-align: center;        }
         #mybody{
             background-color: deeppink;
             margin: auto;

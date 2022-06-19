@@ -1,26 +1,20 @@
 <?php
-    $conexion =  new mysqli("localhost", "root" ,"", "transitdolls");
 
-    if($conexion->connect_errno)
-    {
-        echo "Fallo a la conexión ".$conexion->connect_errno;
-    }
-    
-    $conexion->set_charset("utf8");
-    $resul=$conexion->query("SELECT type, material, made_in from dolls");
-echo "<table>
-                <tr>
-                <th>type</th>
-                <th>material</th>
-                <th>made_in</th>
-              </tr>";
-    while($fila=$resul->fetch_assoc()){
-        echo "<tr>
-                <td>".$fila['type']."</td>
-                <td>".$fila['material']."</td>
-                <td>".$fila['made_in']."</td>
-              </tr>
-              ";
+    class Conexion{
+        protected $conexion_db;
 
+        public function Conexion()
+        {
+            $this->conexion_db = new mysqli("localhost", "root" ,"", "transitdolls");
+
+            if($this->conexion_db->connect_errno)
+            {
+                echo "Fallo a la conexión ".$this->conexion_db->connect_errno;
+            }
+
+            $this->conexion_db->set_charset("utf8");
+            return $this->conexion_db;
+        }
     }
+
 ?>
