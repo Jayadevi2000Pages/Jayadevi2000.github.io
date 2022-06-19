@@ -1,3 +1,13 @@
+<?php
+if(isset($_POST['submit'])) {
+
+    $user = $_POST['usuario'];
+    $password = $_POST['password'];
+    require_once 'CRUD.php';
+    $mycrud = new Crud();
+    $mycrud->getUser("Select name from clients where name = '$user' and password ='$password'");
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,16 +40,16 @@
                     </div>
 
                     <div class="pt-3 pb-3">
-                        <form class="form-horizontal" method="post" action="home.php">
+                        <form class="form-horizontal" method="post" action="<?php $_SERVER["PHP_SELF"]?>">
                             <div class="form-group row justify-content-center px-3">
                                 <div class="col-9 px-0">
-                                    <input type="text" placeholder="&#xf007; &nbsp; User name" class="form-control border-info placeicon">
+                                    <input type="text" id="user"  name="user" placeholder="&#xf007; &nbsp; User name" class="form-control border-info placeicon">
                                 </div>
                             </div>
 
                             <div class="form-group row justify-content-center px-3">
                                 <div class="col-9 px-0">
-                                    <input type="password" placeholder="&#xf084; &nbsp; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" class="form-control border-info placeicon">
+                                    <input type="password"  id="password"  name="password" placeholder="&#xf084; &nbsp; &#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" class="form-control border-info placeicon">
                                 </div>
                             </div>
 
@@ -70,34 +80,7 @@
                     </div>
 
                     <div class="mx-0 px-0 bg-light">
-                        <div class="pt-4">
-                            <div class="row justify-content-center pt-3">
-                                <h3><strong>Login</strong></h3>
-                            </div>
 
-                            <div class="row justify-content-center">
-                                <h5>With your social media account</h5>
-                            </div>
-
-                            <div class="row justify-content-center pt-4">
-                                <div class="col-10">
-                                    <div class="row justify-content-center">
-                                      <!-- Facebook Connect -->
-                                        <div class="col-7 col-sm-4 px-1 pb-1">
-                                            <a href="#" class="btn btn-block btn-social btn-facebook">
-                                                <span class="fa fa-facebook"></span> Facebook
-                                            </a>
-                                        </div>
-                                        <!-- Google Connect -->
-                                        <div class="col-7 col-sm-4 px-1 pb-1">
-                                            <a href="#" class="btn btn-block btn-social btn-google">
-                                                <span class="fa fa-google-plus"></span> Google+
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="px-4 pt-5">
                             <hr>

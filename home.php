@@ -1,7 +1,16 @@
 <?php
 require_once 'header.php';
+
+/*    session_start();
+    if (!isset($_SESSION['usuario'])) {
+
+    }
+}else{
+
+}*/
 ?>
 <div id="mybody">
+    <a href="iframe_Shop.php" alt="">
     <div class="card mb-3" style="max-width: 700px; margin: auto; text-align: center;">
       <div class="row g-0">
         <div class="col-md-4">
@@ -16,7 +25,9 @@ require_once 'header.php';
         </div>
       </div>
     </div>
+    </a>
     <br>
+    <a href="Blog.php" alt="">
     <div class="card mb-3" style="max-width: 700px; margin: auto; text-align: center;">
         <div class="row g-0">
             <div class="col-md-4">
@@ -31,6 +42,7 @@ require_once 'header.php';
             </div>
         </div>
     </div>
+    </a>
 </div>
 
 <?php

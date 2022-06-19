@@ -39,22 +39,12 @@
             <!-- Github -->
             <a
                     class="btn btn-primary btn-floating m-1"
-                    style="background-color: #333333;"
-                    href="#!"
+                    style="background-color: #AF5C50FF;"
+                    href="mailto:jayadevi.pineiro@gmail.com?subject=Transitdolls"
                     role="button"
-            ><i class="fab fa-github"></i
-                ></a>
+            ><img src="images/gmail.jfif" style="border-radius: 25px; height: 38px; width: 38px;"></i></a>
         </section>
-        <!-- Section: Social media -->
     </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2020 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
