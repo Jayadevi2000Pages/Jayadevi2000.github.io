@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html>
-<body>
+<?php
+session_start();
 
-<h2>Text input fields</h2>
-
-<form>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="John"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Doe">
-</form>
-
-<p>Estás dentro</p>
-
-<p>Also note that the default width of text input fields is 20 characters.</p>
-
-</body>
-</html>
-
+require_once 'header.php';
+$user=$_SESSION['usuario'];
+echo "Bienvenido $user";
+echo "<script>document.getElementById('dropdownMenuButton1').innerHTML='$user'</script>";
+echo "<br><a href='home.php'>Volver a inicio</a>";
+require_once 'footer.php';
+?>

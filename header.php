@@ -34,6 +34,10 @@
             margin: auto;
             text-align: center;
         }
+        body{
+            background-color: #ffd6ea;
+
+        }
         header{
             margin: auto;
             text-align: center;
@@ -89,7 +93,9 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="iframe_Shop.php">Tienda</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Graphic_Visitas.php">Visitas</a>
+                    </li>
 
                 </ul>
                 <div class="dropdown">

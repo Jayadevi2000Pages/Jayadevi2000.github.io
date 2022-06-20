@@ -84,7 +84,7 @@
 
         <a href="#" class="category_item" category="resina">resina</a> <br>
         <a href="#" class="category_item" category="Plastico">Plastico</a><br>
-        <a href="#" class="category_item" category="Monster High">Monster High</a><br>
+        <a href="#" class="category_item" category="arcilla">arcilla</a><br>
         <a href="#" class="category_item" category="Otros">Otros</a><br>
         <br>
         <h5>Precio : </h5>

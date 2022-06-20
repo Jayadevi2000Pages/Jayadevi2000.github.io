@@ -70,13 +70,13 @@
 
 <div id ="cuerpo_entero">
     <div>
-        <p style="color:blue;"><a href="home.php">Home</a> >> <a href="Shop.php">Shop</a></p>
+        <p style="color:blue;"><a href="home.php">Home</a> >> <a href="iframe_Shop.php">Shop</a></p>
     </div>
     <div id="filtros">
         <h5>Tipo : </h5>
         <a href="iframe_Shop.php" class="category_item" category="BJD">BJD</a> <br>
         <a href="iframe_Shop.php" class="category_item" category="Momoko">Momoko</a><br>
-        <a href="iframe_Shop.php" class="category_item" category="Monster High">Monster High</a><br>
+        <a href="iframe_Shop.php" class="category_item" category="arcilla">arcilla</a><br>
         <a href="iframe_Shop.php" class="category_item" category="Otros">Otros</a><br>
         <h5>Material : </h5>
 

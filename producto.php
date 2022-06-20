@@ -15,7 +15,7 @@
     <link href="blog.css" rel="stylesheet">
 </head>
 <body>
-
+<div style='margin-right: 10%; margin-left: 10%;margin-bottom: 5%; margin-top: 5%'>
 <h2>Muñeca</h2>
 <?php
 require_once 'CRUD.php';
@@ -33,14 +33,27 @@ foreach ($res as $fila) {
     $made_in = $fila['made_in'];
     $precio = $fila['precio'];
     echo "
-<div class='container' style='margin-right: 10%; margin-left: 10%;margin-bottom: 5%; margin-top: 5%'>
-        <img src='server_images/$foto' class='w3-col m8 l9' alt='$tipo' height='30%' width='30%'>
-        <div id='dfundamental' class='w3-col m4 l3' >
-            Tipo: $tipo<br>
-            Nombre:$name<br>
-            Precio:$precio €<br>
+<div class='row align-items-end' style='margin-right: 10%; margin-left: 10%;margin-bottom: 5%; margin-top: 5%'>
+        <div class='col'>
+        <img src='server_images/$foto' alt='$tipo' height='60%' width='60%'>
         </div>
-
+        <div id='dfundamental' class='col'>
+        <table class='table table-striped'>
+          <tr>
+            <th>Tipo</th>
+            <td>$tipo</td>         
+          </tr>
+          <tr>
+            <th>Nombre</th>
+            <td>$name</td>
+          </tr>
+          <tr>
+           <th>Precio</th>
+            <td>$precio €</td>
+          </tr>
+        </table>
+        </div>
+</div>
 <div id='dgeneral' style=''><h5>Descripción</h5>
 <table class='table table-striped'>
   <thead>
@@ -66,6 +79,6 @@ foreach ($res as $fila) {
 </div></div>";
 }
 ?>
-
+</div>
 </body>
 </html>

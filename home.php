@@ -1,7 +1,5 @@
 <?php
 require_once 'header.php';
-
-
 ?>
 <div id="mybody">
     <a href="iframe_Shop.php" alt="">
@@ -20,7 +18,7 @@ require_once 'header.php';
     </div>
     </a>
     <br>
-    <a href="Blog.php" alt="">
+    <a href="Blog.php" alt="img_blog">
     <div class="card mb-3" style="max-width: 700px; margin: auto; text-align: center;">
         <div class="row g-0">
             <div class="col-md-4">

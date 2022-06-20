@@ -154,7 +154,7 @@
     </nav>
     <header>
 
-        <h2>Login Form</h2>
+        <h2>Sign Up Form</h2>
 
         <form  action="manejaResgitro.php" method="post">
 
@@ -164,12 +164,12 @@
                 <input type="text" placeholder="Enter Username" name="usuario" required>
 
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="password" required>
+                <input type="password" placeholder="Enter Password" id="password" name="password" required>
 
                 <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="password" required>
+                <input type="password" placeholder="Enter Password" id="password1" name="password1" required>
 
-                <button type="submit">Login</button>
+                <button id="mybutton"type="submit">Registrarse</button>
                 <label>
                     <input type="checkbox" checked="checked" name="remember"> Remember me
                 </label>
@@ -179,7 +179,17 @@
                 <span class="psw">Forgot <a href="#">password?</a></span>
             </div>
         </form>
+        <script>
+            window.onload=function () {
 
+                document.getElementById("mybutton").onmousedown=validar();
+            }
+            function validar(){
+                if(document.getElementById("password").value!=document.getElementById("password1").value){
+                    alert("La contraseña repetida no es igual");
+                }
+            }
+        </script>
         <?php
         require_once 'footer.php';
         ?>

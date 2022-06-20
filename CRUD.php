@@ -27,12 +27,10 @@
         }
 
         public function insertUser($query){
-            $res = $this->conexion_db->prepare($query);
-            $reg = $res->execute();
-            if ($this->conexion_db->errno ) {
-                echo "Error de inserción : " . $this->conexion_db->error;
+            if (mysqli_query($this->conexion_db, $query)) {
+                echo "Registro ingresado correctamente";
             } else {
-                echo "El Registro fue realizado con exito !!!";
+                echo "Error: " . $query . "" . mysqli_error($this->conexion_db);
             }
 
             // cerrar la conexion
@@ -60,6 +58,7 @@
                 session_start();
                 $_SESSION['usuario']=$_POST['usuario'];
                 echo "<script>alert('DENTRO')</script>";
+                //exit;
 
             }
         }
